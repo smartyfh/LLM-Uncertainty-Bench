@@ -226,7 +226,7 @@ if __name__ == "__main__":
     parser.add_argument('--model', type=str, required=True)
     parser.add_argument('--data_path', type=str, default="data")
     parser.add_argument('--file', type=str, default="xxx.json", help="Specify which dataset to use")
-    parser.add_argument('--prompt_method', type=str, default="base", help="Slect from 'base', 'shared', 'task'")
+    parser.add_argument('--prompt_method', type=str, default="base", help="Select from 'base', 'shared', 'task'")
     parser.add_argument('--output_dir', type=str, default='outputs')
     parser.add_argument('--few_shot', type=int, default=0)
     parser.add_argument('--cot', action="store_true", default=False)
