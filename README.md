@@ -65,7 +65,7 @@ We formulate each task as a multiple-choice question answering (MCQA) task and t
 We first compare the performance of various LLMs in terms of prediction accuracy (**Acc**), which measures the proportion of test instances whose true label has the highest predicted probability.
 
 | LLMs | QA | RC | CI | DRS | DS | Avg. |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+| ----- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | 
 | Qwen-14B | 64.25 | 91.52 | 91.00 | 73.90 | 49.33 | 74.00 |
 | Yi-6B | 57.57 | 85.99 | 76.50 | 58.72 | 66.06 | 68.97 |
 | Mistral-7B | 60.44 | 81.94 | 62.93 | 53.21 | 62.16 | 64.14 |
@@ -80,7 +80,7 @@ We first compare the performance of various LLMs in terms of prediction accuracy
 We then compare the performance of various LLMs in terms of prediction uncertainty, which is meaured as the average size of prediction sets of all test instances (**SS**). Note that a larger set size indicates higher uncertainty.
 
 | LLMs | QA | RC | CI | DRS | DS | Avg. |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+| ----- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | 
 | Qwen-14B | 2.80 | 1.74 | 2.02 | 1.94 | 2.37 | 2.17 |
 | Yi-6B | 3.20 | 1.92 | 1.88 | 2.85 | 1.96 | 2.36 |
 | Mistral-7B | 2.80 | 1.75 | 2.48 | 2.71 | 2.40 | 2.43 |
@@ -92,8 +92,25 @@ We then compare the performance of various LLMs in terms of prediction uncertain
 | MPT-7B | 3.53 | 3.46 | 3.60 | 3.59 | 3.66 | 3.57 |
 | Falcon-7B | 3.90 | 3.60 | 3.66 | 3.64 | 3.92 | 3.75 |
 
+In addition, we propose a new evaluation metric, Uncertainty-aware Accuracy (**UAcc**), which takes into account both prediction accuracy and prediction uncertainty.
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?UAcc=\frac{Acc}{SS}\sqrt{|\mathcal{Y}|},~\mathcal{Y}~denotes~the~option~set." />
+</p>
+Note that UAcc can take values greater than 1. 
 
 
+| LLMs | QA | RC | CI | DRS | DS | Avg. |
+| ----- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | 
+| Qwen-14B | 57.83 | 157.52 | 147.13 | 97.70 | 51.22 | 102.28 |
+| Yi-6B | 45.18 | 132.61 | 103.41 | 50.97 | 85.49 | 83.53 |
+| Mistral-7B | 54.60 | 124.71 | 62.45 | 48.18 | 64.25 | 70.84 |
+| Llama-2-13B | 42.53 | 92.46 | 53.82 | 50.52 | 66.02 | 61.07 |
+| Qwen-7B | 42.45 | 118.10 | 69.47 | 64.42 | 27.28 | 64.34 |
+| InternLM-7B | 34.17 | 86.84 | 34.56 | 29.73 | 18.87 | 40.83 |
+| Llama-2-7B | 34.97 | 67.92 | 32.25 | 24.50 | 33.91 | 38.71 |
+| DeepSeek-7B | 33.63 | 58.50 | 34.23 | 24.11 | 33.52 | 36.80 |
+| MPT-7B | 20.44 | 22.43 | 17.36 | 16.66 | 16.63 | 18.70 |
+| Falcon-7B | 14.90 | 17.01 | 16.66 | 17.41 | 15.42 | 16.28 |
 
 
 
