@@ -60,18 +60,39 @@ We formulate each task as a multiple-choice question answering (MCQA) task and t
 
 ## 4. Evaluation Results
 
+### Pretrained Base LLMs
+
+We first compare the performance of various LLMs in terms of prediction accuracy (**Acc**), which measures the proportion of test instances whose true label has the highest predicted probability.
+
 | LLMs | QA | RC | CI | DRS | DS | Avg. |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
 | Qwen-14B | 64.25 | 91.52 | 91.00 | 73.90 | 49.33 | 74.00 |
 | Yi-6B | 57.57 | 85.99 | 76.50 | 58.72 | 66.06 | 68.97 |
 | Mistral-7B | 60.44 | 81.94 | 62.93 | 53.21 | 62.16 | 64.14 |
 | Llama-2-13B | 52.52 | 77.23 | 59.66 | 52.65 | 60.05 | 60.42 |
-| Qwen-7B| 55.21 | 83.89 | 63.70 | 64.04 | 32.53 | 59.87 |
+| Qwen-7B | 55.21 | 83.89 | 63.70 | 64.04 | 32.53 | 59.87 |
 | InternLM-7B | 48.37 | 73.86 | 46.21 | 43.72 | 34.38 | 49.31 |
 | Llama-2-7B | 45.60 | 65.79 | 43.05 | 32.61 | 45.60 | 46.53 |
 | DeepSeek-7B | 45.65 | 65.39 | 42.66 | 33.50 | 42.15 | 45.87 |
 | MPT-7B | 29.49 | 31.69 | 25.50 | 24.38 | 24.86 | 27.18 |
 | Falcon-7B | 23.75 | 24.98 | 24.91 | 25.86 | 24.69 | 24.84 |
+
+We then compare the performance of various LLMs in terms of prediction uncertainty, which is meaured as the average size of prediction sets of all test instances (**SS**). Note that a larger set size indicates higher uncertainty.
+
+| LLMs | QA | RC | CI | DRS | DS | Avg. |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+| Qwen-14B | 2.80 | 1.74 | 2.02 | 1.94 | 2.37 | 2.17 |
+| Yi-6B | 3.20 | 1.92 | 1.88 | 2.85 | 1.96 | 2.36 |
+| Mistral-7B | 2.80 | 1.75 | 2.48 | 2.71 | 2.40 | 2.43 |
+| Llama-2-13B | 3.06 | 2.24 | 2.72 | 2.55 | 2.24 | 2.56 |
+| Qwen-7B | 3.26 | 2.15 | 2.28 | 2.51 | 2.92 | 2.63 |
+| InternLM-7B | 3.49 | 2.19 | 3.28 | 3.63 | 4.47 | 3.41 |
+| Llama-2-7B | 3.20 | 2.39 | 3.27 | 3.26 | 3.30 | 3.09 |
+| DeepSeek-7B | 3.34 | 2.77 | 3.06 | 3.40 | 3.08 | 3.13 |
+| MPT-7B | 3.53 | 3.46 | 3.60 | 3.59 | 3.66 | 3.57 |
+| Falcon-7B | 3.90 | 3.60 | 3.66 | 3.64 | 3.92 | 3.75 |
+
+
 
 
 
