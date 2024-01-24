@@ -115,6 +115,8 @@ Note that UAcc can take values greater than 1.
 
 ### Instruction-Finetuned Chat LLMs
 
+We adopt two methods to prepare the prompt input for instruction-finetuned LLMs. The first method aligns with the format of the instruction data (denoted as **Chat-V1**). This method aims to evaluate the LLM’s proficiency in adhering to instructions to accomplish tasks. The second method employs the same prompt format as the base version (denoted as **Chat-V2**). This method aims to assess the extent of the base LLM’s capabilities retained after instruction-finetuning.
+
 <p align="center">
   <img src="images/Llama-2.png" width="90%" />
   <p align="center">Mean performance outcomes of the Llama-2 series’ pretrained base model and the instruction-finetuned chat model across five tasks.</p>
