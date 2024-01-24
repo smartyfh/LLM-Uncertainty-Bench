@@ -36,3 +36,18 @@ To bridge this gap, we introduce a new benchmarking approach for LLMs that integ
   
 By taking uncertainty into account, our new UAcc metric can either amplify or diminish the relative improvement of one LLM over another and may even change the relative ranking of two LLMs, thus underscoring the significance of incorporating uncertainty in the evaluation of LLMs.
 
+
+
+
+
+
+## Citation
+
+```bibtex
+@article{ye2024llm_uq,
+  title={Benchmarking LLMs via Uncertainty Quantification},
+  author={Ye, Fanghua and Yang MingMing and Pang, Jianhui and Wang, Longyue and Wong, Derek F and Yilmaz Emine and Shi, Shuming and Tu, Zhaopeng},
+  journal={arXiv preprint arXiv:2401.12794},
+  year={2024}
+  }
+```
