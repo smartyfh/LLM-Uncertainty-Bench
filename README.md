@@ -113,6 +113,13 @@ Note that UAcc can take values greater than 1.
 | Falcon-7B | 14.90 | 17.01 | 16.66 | 17.41 | 15.42 | 16.28 |
 
 
+### Instruction-Finetuned Chat LLMs
+
+<p align="center">
+  <img src="images/Llama-2.png" width="90%" />
+  <p align="center">Mean performance outcomes of the Llama-2 series’ pretrained base model and the instruction-finetuned chat model across five tasks.</p>
+</p>
+
 
 ## Citation
 
