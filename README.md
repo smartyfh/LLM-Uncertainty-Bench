@@ -37,8 +37,13 @@ To bridge this gap, we introduce a new benchmarking approach for LLMs that integ
 By taking uncertainty into account, our new UAcc metric can either amplify or diminish the relative improvement of one LLM over another and may even change the relative ranking of two LLMs, thus underscoring the significance of incorporating uncertainty in the evaluation of LLMs.
 
 
+## Uncertainty Quantification
+We propose the utilization of [conformal prediction](https://arxiv.org/abs/2107.07511) for uncertainty quantification in LLMs. Compared to other methods, conformal prediction offers multiple advantages including ease of implementation, high efficiency, and a statistically rigorous estimation of uncertainty rather than a heuristic approximation.
 
-
+<p align="center">
+  <img src="images/diagram.png" width="85%" />
+  <p align="center">The overall process of applying conformal prediction for uncertainty quantification in LLMs.</p>
+</p>
 
 
 ## Citation
