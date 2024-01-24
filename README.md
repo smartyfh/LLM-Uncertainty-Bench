@@ -145,7 +145,7 @@ We adopt two methods to prepare the prompt input for instruction-finetuned LLMs.
 </details>
 
 
-## Citation
+## 5. Citation
 
 ```bibtex
 @article{ye2024llm_uq,
