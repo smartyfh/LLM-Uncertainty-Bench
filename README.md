@@ -1,6 +1,21 @@
 <div align="center">
 
 # Benchmarking LLMs via Uncertainty Quantification
+
+![Question Answering](https://img.shields.io/badge/Task-Question_Answering-red) 
+![RC](https://img.shields.io/badge/Task-Reading_Comprehension-red) 
+![CI](https://img.shields.io/badge/Task-Commonsense_Inference-red) 
+![DRS](https://img.shields.io/badge/Task-Dialogue_Response_Selection-red)
+![DS](https://img.shields.io/badge/Task-Document_Summarization-red)  
+![Llama-2](https://img.shields.io/badge/Model-Llama--2-21C2A4) 
+![Mistral](https://img.shields.io/badge/Model-Mistral-21C2A4) 
+![Falcon](https://img.shields.io/badge/Model-Falcon-21C2A4) 
+![MPT](https://img.shields.io/badge/Model-MPT-21C2A4)
+![Yi](https://img.shields.io/badge/Model-Yi-21C2A4)
+![Qwen](https://img.shields.io/badge/Model-Qwen-21C2A4)
+![DeepSeek](https://img.shields.io/badge/Model-DeepSeek-21C2A4)
+![InternLM](https://img.shields.io/badge/Model-InternLM-21C2A4)
+
 [Paper](https://arxiv.org/abs/2401.12794)
 
 </div>
