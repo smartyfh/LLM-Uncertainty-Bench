@@ -20,7 +20,7 @@
 
 </div>
 
-## Introduction
+## 1. Introduction
 The proliferation of open-source Large Language Models (LLMs) from various institutions has highlighted the urgent need for comprehensive evaluation methods. However, current evaluation platforms, such as the widely recognized HuggingFace open LLM leaderboard, neglect a crucial aspect -- **uncertainty**, which is vital for thoroughly assessing LLMs. 
 
 <p align="center">
@@ -37,14 +37,22 @@ To bridge this gap, we introduce a new benchmarking approach for LLMs that integ
 By taking uncertainty into account, our new UAcc metric can either amplify or diminish the relative improvement of one LLM over another and may even change the relative ranking of two LLMs, thus underscoring the significance of incorporating uncertainty in the evaluation of LLMs.
 
 
-## Uncertainty Quantification
+## 2. Uncertainty Quantification
 We propose the utilization of [conformal prediction](https://arxiv.org/abs/2107.07511) for uncertainty quantification in LLMs. Compared to other methods, conformal prediction offers multiple advantages including ease of implementation, high efficiency, and a statistically rigorous estimation of uncertainty rather than a heuristic approximation.
 
 <p align="center">
-  <img src="images/diagram.png" width="85%" />
+  <img src="images/diagram.png" width="90%" />
   <p align="center">The overall process of applying conformal prediction for uncertainty quantification in LLMs.</p>
 </p>
 
+### Evaluation Tasks and Datasets
+In order to evaluate the performance of LLMs comprehensively, we consider five typical NLP tasks and prepare a dataset with **10,000** instances for each task.
+
+* **Question Answering (QA):**
+* **Reading Comprehension (RC):**
+* **Commonsense Inference (CI):**
+* **Dialogue Response Selection (DRS):**
+* **Document Summarization (DS):**
 
 ## Citation
 
