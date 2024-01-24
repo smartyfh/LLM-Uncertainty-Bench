@@ -123,6 +123,12 @@ We adopt two methods to prepare the prompt input for instruction-finetuned LLMs.
 </p>
 
 
+<details>
+  <summary>Click to view image</summary>
+  ![Sample Image](https://via.placeholder.com/150)
+</details>
+
+
 ## Citation
 
 ```bibtex
