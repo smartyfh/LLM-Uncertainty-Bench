@@ -45,7 +45,7 @@ We propose the utilization of [conformal prediction](https://arxiv.org/abs/2107.
   <p align="center">The overall process of applying conformal prediction for uncertainty quantification in LLMs.</p>
 </p>
 
-### Evaluation Tasks and Datasets
+## 3. Evaluation Tasks and Datasets
 In order to evaluate the performance of LLMs comprehensively, we consider five typical NLP tasks and prepare a dataset with **10,000** instances for each task.
 
 * **Question Answering (QA):** QA is applied to evaluate an LLM's proficiency in utilizing its extensive world knowledge to provide accurate answers to a diverse range of questions. For this task, we construct the evaluation dataset based on [MMLU](https://arxiv.org/abs/2009.03300).
