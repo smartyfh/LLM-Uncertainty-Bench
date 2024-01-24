@@ -124,8 +124,24 @@ We adopt two methods to prepare the prompt input for instruction-finetuned LLMs.
 
 
 <details>
-  <summary>Click to view image</summary>
-  ![Sample Image](https://via.placeholder.com/150)
+  <summary>Click to view results of the Yi series</summary>
+  <p align="center">
+  <img src="images/Yi.png" width="90%" />
+  </p>
+</details>
+
+<details>
+  <summary>Click to view results of the DeepSeek series</summary>
+  <p align="center">
+  <img src="images/deepseek.png" width="90%" />
+  </p>
+</details>
+
+<details>
+  <summary>Click to view results of the Falcon series</summary>
+  <p align="center">
+  <img src="images/falcon.png" width="90%" />
+  </p>
 </details>
 
 
