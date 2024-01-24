@@ -24,7 +24,7 @@
 The proliferation of open-source Large Language Models (LLMs) from various institutions has highlighted the urgent need for comprehensive evaluation methods. However, current evaluation platforms, such as the widely recognized HuggingFace open LLM leaderboard, neglect a crucial aspect -- **uncertainty**, which is vital for thoroughly assessing LLMs. 
 
 <p align="center">
-  <img src="images/intro_exp.jpg" width="50%" />
+  <img src="images/intro_exp.jpg" width="45%" />
   <p align="center">Two LLMs can achieve the same accuracy score but demonstrate different levels of uncertainty.</p>
 </p>
 
