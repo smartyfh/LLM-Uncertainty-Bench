@@ -45,6 +45,7 @@ We propose the utilization of [conformal prediction](https://arxiv.org/abs/2107.
   <p align="center">The overall process of applying conformal prediction for uncertainty quantification in LLMs.</p>
 </p>
 
+
 ## 3. Evaluation Tasks and Datasets
 In order to evaluate the performance of LLMs comprehensively, we consider five typical NLP tasks and prepare a dataset with **10,000** instances for each task.
 
@@ -54,7 +55,13 @@ In order to evaluate the performance of LLMs comprehensively, we consider five t
 * **Dialogue Response Selection (DRS):** DRS is adopted for assessing the ability of LLMs to comprehend the meaning of a given dialogue and select an appropriate response from a set of possible responses. For this task, we construct the evaluation dataset based on [HaluEval](https://arxiv.org/abs/2305.11747).
 * **Document Summarization (DS):** DS is taken to evaluate the proficiency of LLMs in comprehending the substance and context of a given document, and in producing a succinct and cohesive summary that effectively conveys the crucial information and main ideas of the document. For this task, we construct the evaluation dataset based on [HaluEval](https://arxiv.org/abs/2305.11747).
 
-### Evaluated LLMs
+
+## 4. Evaluation Results
+
+| LLMs | QA | RC | CI | DRS | DS | Avg. |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+| Qwen-14B | 64.25 | 91.52 | 91.00 | 73.90 | 49.33 | 74.00 |
+
 
 ## Citation
 
