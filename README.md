@@ -16,7 +16,7 @@
 ![DeepSeek](https://img.shields.io/badge/Model-DeepSeek-21C2A4)
 ![InternLM](https://img.shields.io/badge/Model-InternLM-21C2A4)
 
-📰 [Paper](https://arxiv.org/abs/2401.12794), :card_file_box: [Datasets](https://github.com/smartyfh/LLM-Uncertainty-Bench/tree/main/data)
+📰 [Paper](https://arxiv.org/abs/2401.12794), :card_file_box: [Datasets](https://huggingface.co/datasets/ErikYip/LLM-Uncertainty-Bench/tree/main)
 
 </div>
 
