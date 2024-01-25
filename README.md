@@ -163,7 +163,54 @@ We adopt two methods to prepare the prompt input for instruction-finetuned LLMs.
 </details>
 
 
-## 5. Citation
+## 5. Usage
+
+### Installation
+We have used `Python 3.10.13` with the following dependencies.
+```shell
+pip install -r requirements.txt
+```
+
+### Get Option Logits from LLMs
+We prompt LLMs to obtain logit outputs corresponding to all options (i.e. A, B, C, D, E, and F).
+```shell
+python generate_logits.py \
+  --model={path to model directory} \
+  --data_path={path to data directory} \
+  --file={name of dataset} \
+  --prompt_method={base/shared/task} \
+  --output_dir={output directory} \
+  --few_shot={1 for few-shot and 0 for zero-shot}
+```
+
+or 
+
+```shell
+python generate_logits_chat.py \
+  --model={path to model directory} \
+  --data_path={path to data directory} \
+  --file={name of dataset} \
+  --prompt_method={base/shared/task} \
+  --output_dir={output directory} \
+  --few_shot={1 for few-shot and 0 for zero-shot}
+```
+for chat version.
+
+### Apply Conformal Prediction for Uncertainty Quantification
+We split each dataset into a calibration set and a test set, and apply conformal prediction to obtain prediction sets for all test set instances.
+
+```shell
+python uncertainty_quantification_via_cp.py \
+  --model={model name} \
+  --raw_data_dir={path to data directory} \
+  --logits_data_dir={path to directory where option logits are stored} \
+  --data_names={list of datasets to be evaluated} \
+  --cal_ratio={how much data to be used as the calibration data, e.g., 0.5} \
+  --alpha={error rata, e.g., 0.1} 
+```
+
+
+## 6. Citation
 
 ```bibtex
 @article{ye2024llm_uq,
@@ -173,3 +220,7 @@ We adopt two methods to prepare the prompt input for instruction-finetuned LLMs.
   year={2024}
   }
 ```
+
+
+## 7. Contact
+If you have any questions, feel free to raise an issue ro contact us at <fanghua.ye.21@gmail.com>.
