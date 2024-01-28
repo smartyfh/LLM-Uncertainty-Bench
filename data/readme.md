@@ -5,4 +5,4 @@
 4. halu_dialogue -> Dialogue Response Selection (DRS)
 5. halu_summarization -> Document Summarization (DS)
 
-The halu_summarization dataset is too large to be placed here. Please check [HuggingFaace](https://huggingface.co/datasets/ErikYip/LLM-Uncertainty-Bench/tree/main) for details. 
+The halu_summarization dataset is too large to be placed here. Please check [HuggingFace](https://huggingface.co/datasets/ErikYip/LLM-Uncertainty-Bench/tree/main) for details. 
