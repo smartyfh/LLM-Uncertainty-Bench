@@ -83,7 +83,7 @@ We first compare the performance of various LLMs in terms of prediction accuracy
 | MPT-7B | 29.49 | 31.69 | 25.50 | 24.38 | 24.86 | 27.18 |
 | Falcon-7B | 23.75 | 24.98 | 24.91 | 25.86 | 24.69 | 24.84 |
 
-We then compare the performance of various LLMs in terms of prediction uncertainty, which is meaured as the average size of prediction sets of all test instances (**SS**). Note that a larger set size indicates higher uncertainty.
+We then compare the performance of various LLMs in terms of prediction uncertainty, which is measured as the average size of prediction sets of all test instances (**SS**). Note that a larger set size indicates higher uncertainty.
 
 | LLMs | QA | RC | CI | DRS | DS | Avg. |
 | ----- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | 
