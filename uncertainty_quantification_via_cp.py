@@ -303,8 +303,8 @@ if __name__ == "__main__":
                         default=['base', 'shared', 'task'], 
                         help='List of prompting methods. If empty, all methods are evaluated.')
     parser.add_argument("--icl_methods", nargs='*', 
-                        default=['icl5'], 
-                        help='Select from icl5, icl0, icl0_cot.')
+                        default=['icl1'], 
+                        help='Select from icl1, icl0, icl0_cot.')
     parser.add_argument("--cal_ratio", type=float, default=0.5,
                         help="The ratio of data to be used as the calibration data.")
     parser.add_argument("--alpha", type=float, default=0.1,
