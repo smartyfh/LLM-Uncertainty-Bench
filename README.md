@@ -209,6 +209,40 @@ python uncertainty_quantification_via_cp.py \
   --alpha={error rata, e.g., 0.1} 
 ```
 
+Take Qwen-72B as an example, we have
+```shell
+python uncertainty_quantification_via_cp.py \
+  --model=Qwen-72B \
+  --raw_data_dir=data \
+  --logits_data_dir=outputs_base \
+  --cal_ratio=0.5 \
+  --alpha=0.1 
+```
+
+mmlu_10k_Acc: 72.53 \
+cosmosqa_10k_Acc: 91.86 \
+hellaswag_10k_Acc: 88.09 \
+halu_dialogue_Acc: 77.13 \
+halu_summarization_Acc: 60.63 \
+Average acc: 78.05 \
+mmlu_10k_SS: 2.45 \
+cosmosqa_10k_SS: 1.90 \
+hellaswag_10k_SS: 1.80 \
+halu_dialogue_SS: 2.09 \
+halu_summarization_SS: 2.06 \
+Average SS: 2.06 \
+mmlu_10k_Coverage Rate: 93.43 \
+cosmosqa_10k_Coverage Rate: 95.79 \
+hellaswag_10k_Coverage Rate: 93.99 \
+halu_dialogue_Coverage Rate: 93.02 \
+halu_summarization_Coverage Rate: 90.41 \
+Average Coverage Rate: 93.33 \
+mmlu_10k_UAcc: 80.24 \
+cosmosqa_10k_UAcc: 152.50 \
+hellaswag_10k_UAcc: 146.12 \
+halu_dialogue_UAcc: 96.04 \
+halu_summarization_UAcc: 74.92 \
+Average UAcc: 109.96
 
 ## 6. Citation
 
